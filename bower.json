@@ -1,0 +1,24 @@
+{
+  "name": "material-kit-react",
+  "homepage": "https://github.com/DenisSMoreira",
+  "authors": [
+    "denis.moreira"
+  ],
+  "description": "Buy a feature",
+  "main": "dist/index.js",
+  "keywords": [
+    "material",
+    "design",
+    "material-ui",
+    "google",
+    "twitter"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
