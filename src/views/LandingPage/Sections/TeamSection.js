@@ -28,6 +28,7 @@ import gisele from "assets/img/faces/gisele.png";
 import saulo from "assets/img/faces/saulo.png";
 import sergio from "assets/img/faces/sergio.png";
 import bolzan from "assets/img/faces/bolzan.jpg";
+import valentina from "assets/img/faces/valentina.png";
 
 const useStyles = makeStyles(styles);
 
@@ -229,6 +230,22 @@ export default function TeamSection() {
               <GridItem xs={12} sm={12} md={4}>
                 <Card plain>
                   <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                    <img src={valentina} alt="..." className={imageClasses} />
+                  </GridItem>
+                  <h4 className={classes.cardTitle}>
+                    Valentina Coley
+                    <br />
+                    <small className={classes.smallTitle}>CEO & Co-founder na Cubo Social</small>
+                  </h4>
+                </Card>
+              </GridItem>
+              
+            </GridContainer>
+            <GridContainer>
+            <GridItem xs={12} sm={12} md={4}></GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <Card plain>
+                  <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                     <img src={bolzan} alt="..." className={imageClasses} />
                   </GridItem>
                   <h4 className={classes.cardTitle}>
@@ -238,6 +255,7 @@ export default function TeamSection() {
                   </h4>
                 </Card>
               </GridItem>
+              <GridItem xs={12} sm={12} md={4}></GridItem>
             </GridContainer>
           </div>
         </div>

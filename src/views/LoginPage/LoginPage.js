@@ -21,13 +21,13 @@ import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
-import Cookie from 'js-cookie';
+//import Cookie from 'js-cookie';
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
 import image from "assets/img/bg-simple.png";
 
-import Router from 'next/router';
+//import Router from 'next/router';
 
 import { login } from "services/login";
 import { useMutation } from "react-query";
@@ -38,7 +38,7 @@ import {
   GRANT_TYPE_LOGIN,
   CLIENT_ID,
   CLIENT_SECRET,
-  AUTH_KEYS,
+  //AUTH_KEYS,
 } from 'utils';
 
 const useStyles = makeStyles(styles);
@@ -97,7 +97,6 @@ export default function LoginPage(props) {
   }
 
   function onError() {
-    console.log("onError", errors)
     setErrors({
       ...errors,
       form: true,
@@ -106,16 +105,16 @@ export default function LoginPage(props) {
 
   function onSuccess(data) {
     console.log("onSuccess", data)
-    const { query } = Router;
-    if (data) {
-      Cookie.set(AUTH_KEYS.TOKEN, data.access_token);
-      Cookie.set(AUTH_KEYS.REFRESH_TOKEN, data.refresh_token);
-    }
-    if (query && query.redirect_to) {
-      Router.push(query.redirect_to);
-    } else {
-      Router.push('/');
-    }
+    //const { query } = Router;
+    //if (data) {
+     // Cookie.set(AUTH_KEYS.TOKEN, data.access_token);
+      //Cookie.set(AUTH_KEYS.REFRESH_TOKEN, data.refresh_token);
+    //}
+    //if (query && query.redirect_to) {
+      //Router.push(query.redirect_to);
+    //} else {
+      //Router.push('/');
+    //}
   }
   const [loginRequest] = useMutation(login, {
     onSuccess,
@@ -141,10 +140,8 @@ export default function LoginPage(props) {
         client_id: CLIENT_ID,
         client_secret: CLIENT_SECRET,
       });
-      console.log("requestData", requestData)
       loginRequest(requestData);
     }
-    console.log(formErros)
     setErrors(formErros);
   } 
 
@@ -181,8 +178,7 @@ export default function LoginPage(props) {
                   {errors.form && <SnackbarContent
                       message={
                         <span>
-                          <b>WARNING ALERT:</b> You{"'"}ve got some friends nearby, stop
-                          looking at your phone and find them...
+                          <b>WARNING ALERT:</b> Aguenta ai parça :) já já eu libero!
                         </span>
                       }
                       close

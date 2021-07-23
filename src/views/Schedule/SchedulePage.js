@@ -62,10 +62,10 @@ export default function SchedulePage(props) {
                               <p className={classes.textLeft}><h3><b>09:00 - 09:30</b> Briefing</h3></p>
                               <p className={classes.textLeft}><h3><b>09:30 - 10:30</b> Fase de ideação</h3></p>
                               <p className={classes.textLeft}><h3><b>10:30 - 11:00</b> Mentorias</h3></p>
-                              <p className={classes.textLeft}><h3><b>11:00 - 11:30</b> Trabalho/Intervalo</h3></p>
-                              <p className={classes.textLeft}><h3><b>12:00 - 13:00</b> Mentorias</h3></p>
-                              <p className={classes.textLeft}><h3><b>12:00 - 13:00</b> Trabalho</h3></p>
-                              <p className={classes.textLeft}><h3><b>12:00 - 13:00</b> Entrega</h3></p>
+                              <p className={classes.textLeft}><h3><b>11:00 - 12:15</b> Trabalho/Intervalo</h3></p>
+                              <p className={classes.textLeft}><h3><b>12:15 - 12:45</b> Mentorias</h3></p>
+                              <p className={classes.textLeft}><h3><b>12:45 - 13:45</b> Trabalho</h3></p>
+                              <p className={classes.textLeft}><h3><b>13:45 - 14:00</b> Entrega</h3></p>
                             </GridItem>
                           </GridContainer>
                         ),
@@ -76,13 +76,11 @@ export default function SchedulePage(props) {
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={8}>
-                              <p className={classes.textLeft}><h3><b>09:00 - 09:30</b> Briefing</h3></p>
-                              <p className={classes.textLeft}><h3><b>09:30 - 10:30</b> Trabalho</h3></p>
-                              <p className={classes.textLeft}><h3><b>10:30 - 11:00</b> Mentorias</h3></p>
-                              <p className={classes.textLeft}><h3><b>11:00 - 11:30</b> Intervalo</h3></p>
-                              <p className={classes.textLeft}><h3><b>12:00 - 13:00</b> Mentorias</h3></p>
-                              <p className={classes.textLeft}><h3><b>12:00 - 13:00</b> </h3></p>
-                              <p className={classes.textLeft}><h3><b>12:00 - 13:00</b> Entrega</h3></p>
+                              <p className={classes.textLeft}><h3><b>09:00 - 09:30</b> Mentorias</h3></p>
+                              <p className={classes.textLeft}><h3><b>09:30 - 11:00</b> Trabalho</h3></p>
+                              <p className={classes.textLeft}><h3><b>11:00 - 11:30</b> Mentorias</h3></p>
+                              <p className={classes.textLeft}><h3><b>11:30 - 13:00</b> Trabalho/Intervalo</h3></p>
+                              <p className={classes.textLeft}><h3><b>13:00 - 14:00</b> Entrega</h3></p>
                             </GridItem>
                           </GridContainer>
                         ),

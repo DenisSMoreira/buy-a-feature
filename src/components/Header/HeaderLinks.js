@@ -21,6 +21,7 @@ import Button from "components/CustomButtons/Button.js";
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
+import Pdf from 'assets/pdf/EBOOK HACKATHON DO BEM.pdf';
 
 export default function HeaderLinks(props) {
   const classes = useStyles();
@@ -49,6 +50,7 @@ export default function HeaderLinks(props) {
           href="http://localhost:3000/login-page"
           color="transparent"
           className={classes.navLink}
+          disabled
         >
         Voto popular
         </Button>
@@ -64,7 +66,7 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://invillia.com/global-growth-framework/images/Invillia-Privacy-Policy.pdf"
+          href={Pdf}
           color="transparent"
           target="_blank"
           className={classes.navLink}
